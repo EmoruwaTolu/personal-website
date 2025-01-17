@@ -176,10 +176,10 @@
     font-style: italic;
 }
 .song-content{
+    margin: 2vw 0;
     box-sizing: border-box;
-    padding: 1vw;
-    border: 1px solid #344c34;
     display: flex;
+    justify-content: space-between;
 }
 .song-details{
     display: flex;
@@ -188,7 +188,6 @@
     align-items: center;
     text-decoration: none;
     flex-direction: column;
-    padding: 1vw;
     box-sizing: border-box;
     font-family: 'Finlandica';
 }
