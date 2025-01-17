@@ -21,7 +21,7 @@ const projects = [
         title: "PL Database",
         link: "https://pl-database.onrender.com/",
         image: PLDatabase,
-        description: "This is a website that I built for the Computer Science Students Association",
+        description: "This is a website to visualize the statistics of teams and player in the Premier League 2021-22 to 2022-23 seasons.",
         tech: ["Web Scraping", "Frontend", "Backend", "MongoDB", "Data Visualization"],
         infoPage: '/pldatabase'
     },
@@ -29,7 +29,7 @@ const projects = [
         title: "Army Shooter",
         link: "https://github.com/EmoruwaTolu/ArmyShooter-1.0.0",
         image: ArmyShooter,
-        description: "This is a website that I built for the Computer Science Students Association",
+        description: "This is a videogame I made using C++ that features various minigames, based on the story of WW2.",
         tech: ["C#", "Game Design"]
     },
 ];

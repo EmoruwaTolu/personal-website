@@ -19,6 +19,9 @@
     flex-direction: column;
     align-items: flex-end;
 }
+.layer-info{
+    width: 100%;
+}
 .top-header-left{
     width: 100%;
     height: fit-content;
@@ -155,6 +158,9 @@
     width: 100%;
     height: auto;
 }
+.songs-listening{
+    width: 100%;
+}
 .song-header{
     display: flex;
     background-color: #344c34;
@@ -163,6 +169,7 @@
     box-sizing: border-box;
     padding: 1vw;
     font-family: 'Finlandica';
+    width: 100%;
 }
 .song-header > p{
     margin: 0;
@@ -180,6 +187,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .song-details{
     display: flex;
@@ -190,12 +198,13 @@
     flex-direction: column;
     box-sizing: border-box;
     font-family: 'Finlandica';
+    width: 100%;
 }
 .song-details:nth-child(3){
     margin: 0;
 }
 .song-details > img{
-    width: 10vw;
+    width: 80%;
     height: auto;
     object-fit: cover;
     border: 1px solid #344c34;

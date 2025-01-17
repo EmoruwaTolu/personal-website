@@ -44,9 +44,9 @@ const HomeLayer1: React.FC<HomeLayer1Props> = () => {
                         <AudioButton />
                     </div>
                 </div>
-                <div className='resume-download'>
+                <a className='resume-download' href='/Toluwanimi_Emoruwa.pdf' download="Toluwanimi_Emoruwa.pdf" >
                     Click to download my resume
-                </div>
+                </a>
                 <div className='svg-blurb' style={{fontFamily: `Margarine`}}>
                     I'm a...
                 </div>
