@@ -1,0 +1,222 @@
+.cssa-site-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5em;
+    max-height: 100vh;
+    overflow: scroll;
+    position: relative;
+    display: flex;
+}
+.cssa-project-container{
+    width: 90%;
+    box-sizing: border-box;
+}
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #344c34;
+    height: 30%;
+}
+.home-nav{
+    font-family: 'Helvetica Neue';
+    color: #344c34;
+}
+.home-nav:hover{
+    cursor: pointer;
+    font-style: italic;
+}
+.cssa-layer-1{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw 0;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+.cssa-1-top{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.cssa-landing-image-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+.cssa-top-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cssa-proj-title{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+.cssa-project-details{
+    text-align: start;
+    font-family: 'Finlandica';
+    color: #344c34;
+    font-size: clamp(0.8rem, 1.1vw, calc(1.2 * (1600px / 100)));
+}
+.company-letter{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: clamp(1rem, 2vw, calc(4 * (1600px / 100)));
+}
+#section2{
+    height: 100vh;
+}
+.project-pills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.company-letter.animate {
+    animation: fadeInUp 0.5s ease forwards;
+}
+.cssa-landing-image-container > img{
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px #344c34;
+    border: 1px solid #344c34;
+}
+.cssa-transition-blurb:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.carousel-image-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-image {
+    width: 65%;
+    height: fit-content;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+}
+.image-blurb{
+    width: 30%;
+} 
+.image-blurb-title{
+    width: 100%;
+    display: flex;
+}
+.image-blurb-info{
+    text-align: start;
+    font-family: 'Finlandica';
+}
+.image-blurb-info > p{
+    line-height: 1.75vw;
+}
+.carousel-button {
+    background-color: transparent;
+    border: 1px solid #344c34;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 100;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+} 
+.carousel-button:hover {
+    background-color: #c7c7c0d4;
+}
+.carousel-button:first-of-type {
+    left: 10px;
+}
+.carousel-button:last-of-type {
+    right: 10px;
+}
+.navigation-tools > a > svg{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.navigation-tools > a{
+    text-decoration: none;
+}
+.navigation-tools > a > p{
+    color: #344c34;
+}
+.navigation-tools > a > p:first:hover{
+    font-style: oblique;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (orientation: portrait) {
+    #section2{
+        height: 80vh;
+    }
+    .cssa-1-top{
+        flex-direction: column;
+    }
+    .cssa-landing-image-container{
+        width: 100%;
+    }
+    .cssa-landing-image-container > img{
+        width: 100%;
+    }
+    .cssa-top-right{
+        margin-top: 5vw;
+        width: 100%;
+    }
+    .carousel-image-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .carousel-image-container > img{
+        width: 100%;
+    }
+    .image-blurb{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .image-blurb-info{
+        font-size: clamp(0.8rem, 1.1vw, calc(1.2*(1600px / 100)));
+    }
+    .image-blurb-info > p{
+        line-height: 3vw;
+    }
+}
+@media (orientation: portrait) and (max-width: 500px){
+    .image-blurb-info > p{
+        line-height: 5vw;
+    }
+}

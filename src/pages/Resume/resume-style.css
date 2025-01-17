@@ -1,0 +1,88 @@
+.resume-layers{
+    box-sizing: border-box;
+    padding: 2em;
+    height: 92vh;
+}
+.layer-1-container{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page-title{
+    font-size: 4em;
+    font-family: 'Oswald';
+    font-weight: 800;
+    color: #344c34;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #fd6035 0%, #fd6035 100%);
+    background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 1px 1px;
+    text-decoration: none;
+    width: fit-content;
+}
+.page-title:hover{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fd6035' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 5px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title-blurb{
+    width: fit-content;
+    font-family: 'PT Mono';
+    font-size: 0.75em;
+    color: #344c34;
+}
+.exp-upper-section{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exp-lower-section{
+    width: 80%;
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.job{
+    height: 100%;
+    flex: 1;
+    border: 1px solid #fd6035;
+    border-radius: 8px;
+    margin-right: 1em;
+    transition: all 0.5s ease-in;
+    display: flex;
+    overflow: hidden;
+}
+.job:hover{
+    flex: 3;
+    cursor: pointer;
+    border: 1px dashed #fd6035;
+    background-position: 212px 0px, 0px 116px, 0px 0px, 216px 116px;
+}
+.job-info{
+    width: 300%;
+    display: flex;
+}
+.company-logo-container{
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+.company-logo-container > img{
+    width: 100%;
+    object-fit: cover;
+}
+.description{
+    width: 100%;
+}

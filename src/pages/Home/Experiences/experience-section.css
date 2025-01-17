@@ -1,0 +1,92 @@
+.experience-1-container{
+    width: 100%;
+    height: fit-content;
+    justify-self: flex-end;
+    box-sizing: border-box;
+    padding: 2vw 0;
+    transition: opacity 0.5s ease; /* Adjust duration as needed */
+    opacity: 1; /* Default to fully visible */
+    font-family: 'Finlandica';
+}
+.experience-1-container.fade-out {
+    opacity: 0; /* Fades out when the class is active */
+}
+.job-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #344c34;
+    padding: 2vw 0;
+    box-sizing: border-box;
+}
+.left-experience{
+    width: 40%;
+}
+.left-experience > img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #344c34;
+    box-shadow: 3px 3px #344c34;
+}
+.company-title{
+    font-family: 'Helvetica Neue';
+    color: #344c34;
+    font-weight: 800;
+    font-size: clamp(1rem, 1.25vw, calc(1.25 * (1800px / 100)));
+}
+.role-title{
+    display: flex;
+    justify-content: flex-start;
+    font-size: clamp(1rem, 1.25vw, calc(1.25 * (1800px / 100)));
+    color: #344c34;
+    text-decoration: underline;
+}
+.job-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.job-details  > div:first-child{
+    margin: 5px 0;
+}
+.job-experience{
+    width: 50%;
+}
+.things-done{
+    text-align: start;
+}
+.things-done > li{
+    margin: 0.75vw 0;
+}
+.technologies{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.pill{
+    width: fit-content;
+    border: 1px solid #344c34;
+    margin: 3px;
+    height: fit-content;
+    font-size: clamp(0.85rem, 1vw, calc(1200px / 100));
+    border-radius: 1.5vw;
+    padding: 0.25vw;
+}
+.pill:hover{
+    color: white;
+    background-color: #344c34;
+    cursor:default;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.job-done-stuff {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+}
+@media (orientation: portrait) and (max-width: 500px) {
+    .pill{
+        padding: 0.5vw;
+        font-size: clamp(0.5rem, 0.75vw, calc(0.75 * (1600px / 100)));
+    }
+} 

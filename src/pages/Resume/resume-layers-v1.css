@@ -1,0 +1,153 @@
+/* Keyframe for fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container Styles */
+.resume-layer-container {
+    width: 100%;
+    background-color: transparent;
+    height: 60vh;
+    position: relative;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.company-name {
+    font-size: 5em;
+    color: rgb(202, 202, 202);
+    width: 100%;
+    display: flex;
+    font-family: 'DM Serif Display';
+    justify-content: center;
+}
+
+/* Letter Styles with Animation */
+.company-letter {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    text-transform: uppercase;
+}
+
+/* Animate each letter using the fadeInUp animation */
+.company-letter.animate {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Remaining styles from your previous code */
+.job-pictures {
+    height: 60vh;
+    width: 50vw;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.first-image-container {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    max-height: 350px;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    z-index: 2;
+}
+
+.first-image-container > img {
+    height: 40vh;
+    width: auto;
+    max-height: 350px;
+}
+
+.second-image-container {
+    width: 35vw;
+    height: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+    overflow: hidden;
+    max-width: 510px;
+}
+
+.second-image-container > img {
+    width: 35vw;
+    height: auto;
+    max-width: 510px;
+}
+
+.first-image-details {
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: rgb(219, 219, 219);
+    font-family: 'PT Mono';
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    z-index: 4;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.second-image-details {
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: rgb(219, 219, 219);
+    font-family: 'PT Mono';
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    z-index: 4;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.job-info {
+    box-sizing: border-box;
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    height: 60vh;
+    padding: 1em;
+}
+
+.time-period {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    text-align: left;
+    color: black;
+    animation: topslide 1.5s ease forwards;
+    display: flex;
+}
+
+.job-info > ol {
+    margin: 0;
+    list-style: circle;
+    padding: 0;
+}
+
+.job-info li {
+    font-family: 'PT Mono';
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(131, 131, 131);
+    margin: 1em 0;
+    font-size: 0.9em;
+    line-height: 1.75em;
+    animation: topslide 5.5s ease forwards;
+}

@@ -1,0 +1,241 @@
+::-webkit-scrollbar { 
+    width: 3px;  /* Adjust the width as needed */ 
+    height: 1px; /* Adjust the height for horizontal scrollbars */ 
+    background: #d0d0d0; /* Color of the track */ 
+} 
+::-webkit-scrollbar-thumb { 
+    width: 2px;
+    background: #728172; /* Color of the track */ 
+}
+.home-layer-1-container{
+    width: 45%;
+    height: fit-content;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+    max-height: calc(100vh - 1vw - 1.5em);
+    overflow: scroll;
+    display: flex;
+    padding-right: 2vw;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.top-header-left{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    /* border-bottom: 1px dashed #344c34; */
+    position: relative;
+}
+.audio-button{
+    width: 3vw;
+    height: 3vw;
+    padding: 0.8em;
+    box-sizing: border-box;
+    border: 1px solid #344c34;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+.audio-button:hover{
+    cursor: pointer;
+    background-color: rgb(188, 188, 188);
+}
+.audio-button > svg{
+    width: 100%;
+    height: 100%;
+}
+.audio-button >  svg > path{
+    stroke: #344c34;
+    fill: #344c34;
+}
+.resume-download{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px dashed #d0d0d0;
+    font-family: 'Finlandica';
+    background-color: #344c34;
+    color: #d0d0d0;
+    box-sizing: border-box;
+    padding: 0 1vw ;
+}
+.resume-download:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    border: 1px solid #d0d0d0;
+}
+.contact-group{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px dashed#344c34;
+    border-bottom: 1px dashed#344c34;
+    box-sizing: border-box;
+    padding: 1vw 0;
+}
+.contact-heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0.75vw;
+}
+.reach-links{
+    margin: 0;
+    padding-left: 1.75vw;
+}
+.reach-links > li{
+    list-style: georgian outside url('https://interactive-examples.mdn.mozilla.net/media/examples/rocket.svg');
+    text-align: start;
+    align-items: center;
+}
+.email{
+    text-transform: lowercase;
+    font-family: 'PT Mono';
+    color: rgb(133, 133, 133);
+    width: fit-content;
+    font-size: clamp(1rem, 1vw, calc(1 * (1600px / 100)));
+}
+.email:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact-group > a{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2em;
+    color: red;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.home-layer-1-container > a:hover{
+    color: black;
+}
+.bottom-image-details{
+    position: relative;
+    width: fit-content;
+    transform: translate(200%, 0%);
+}
+.svg-blurb{
+    margin: 1vw 0;
+}
+.svg-image-container{
+    background-color: #deded9;
+}
+.svg-image-container > img{
+    width: 80%;
+    height: auto;
+}
+.image-location{
+    background-color: #344c34;
+    color: white;
+    font-family: 'PT Mono';
+    font-size: 0.8em;
+    position: relative;
+    transform: translate(-30%, 3em);
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+.bottom-image-container{
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.bottom-image-container > img{
+    width: 100%;
+    height: auto;
+}
+.song-header{
+    display: flex;
+    background-color: #344c34;
+    justify-content: space-between;
+    align-items: end;
+    box-sizing: border-box;
+    padding: 1vw;
+    font-family: 'Finlandica';
+}
+.song-header > p{
+    margin: 0;
+    color: white;
+}
+.song-header > p:first-child{
+    font-size: clamp(1rem, 1vw, calc(1 * (1600px / 100)));
+}
+.song-header > p:nth-child(2){
+    font-size: clamp(0.8rem, 0.8vw, calc(0.8 * (1600px / 100)));
+    font-style: italic;
+}
+.song-content{
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 1px solid #344c34;
+    display: flex;
+}
+.song-details{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 1vw;
+    box-sizing: border-box;
+    font-family: 'Finlandica';
+}
+.song-details:nth-child(3){
+    margin: 0;
+}
+.song-details > img{
+    width: 10vw;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #344c34;
+    box-shadow: 3px 3px black;
+}
+.song-details > img:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px black;
+}
+.song-info{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 2vw;
+}
+.song-info > p{
+    color: #344c34;
+    margin: 0;
+}
+@media (orientation: portrait) and (max-width: 500px) {
+    .home-layer-1-container{
+        width: 100%;
+        max-height: none;
+        overflow: hidden;
+    }
+    .resume-download{
+        height: 8vw;
+    }
+    .svg-blurb{
+        margin: 3vw 0;
+    }
+    .svg-image-container > img{
+        width: 100%;
+        height: auto;
+    }
+    .contact-links{
+        margin-left: 5vw;
+    }
+    .contact-group{
+        padding: 3vw 0;
+    }
+}

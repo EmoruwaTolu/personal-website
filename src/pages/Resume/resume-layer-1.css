@@ -1,0 +1,31 @@
+.resume-layer-1-container{
+    position: relative;
+}
+.resume-link-container{
+    width: fit-content;
+    height: fit-content;
+    background-color: #344c34;
+    position: absolute;
+    right: 30%;
+    top: 0%;
+}
+.resume-link-container > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'PT Mono';
+}
+.resume-link-container > a:hover{
+    text-decoration: underline;
+}
+.resume-blurb{
+    font-family: 'PT Mono';
+    text-transform: uppercase;
+    color: rgb(113, 113, 113);
+    max-width: 400px;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}

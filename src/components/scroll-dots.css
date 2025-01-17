@@ -1,0 +1,29 @@
+.scroll-dots {
+    position: sticky;
+    top: 50%;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+.dot.active {
+    background: #344c34; /* Highlight the active dot */
+    height: 12px;
+    width: 12px;
+}
+  

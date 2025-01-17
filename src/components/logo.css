@@ -1,0 +1,118 @@
+.name-holder{
+    width: fit-content;
+    height: fit-content;
+    padding: 0%;
+    margin: 0%;
+}
+.logo-name{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.logo-name > p{
+    margin: 0;
+}
+.name{
+    width: fit-content;
+    font-size: clamp(1rem, 4vw, calc(4 * (1600px / 100)));
+    font-weight: 600;
+    font-family: 'Oswald';
+    z-index: 2;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+    animation: topslide 1.5s ease forwards;
+}
+.name:hover{
+    cursor: pointer;
+    color: #fd6035;
+}
+.logo-smaller{
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+.logo-lastname{
+    width: fit-content;
+    font-size: clamp(1rem, 4vw, calc(4 * (1600px / 100)));
+    font-weight: 600;
+    font-family: 'Oswald';
+    color: rgb(202, 202, 202);
+    z-index: -2;
+    -webkit-text-stroke-color : #344c34;
+    -webkit-text-stroke-width : 1px;
+    animation: bottomslide 1.5s ease forwards;
+}
+.logo-smaller > p{
+    margin: 0%;
+}
+.pronunciation{
+    display: flex;
+    justify-content: end;
+    font-size: 0.75em;
+    position: relative;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.name:hover + .pronunciation {
+    display: flex;
+    width: 100%;
+    top: 0%;
+    position: relative;
+    justify-content: end;
+    opacity: 1;
+    transform: translateY(calc((100% + 6em) * -1)); 
+}
+.pronunciation-l{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    font-size: 0.75em;
+    position: relative;
+    top: 0%;
+    transform: translateY(-6em); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.logo-lastname:hover{
+    cursor: pointer;
+}
+.logo-lastname:hover + .pronunciation-l {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    opacity: 1;
+    transform: translateY(-1em); 
+    pointer-events: none;
+    bottom: 0%;
+}
+@media (orientation: portrait) {
+    .name{
+        font-size: clamp(1rem, 8vw, calc(8 * (1600px / 100)));
+    }
+    .logo-lastname{
+        font-size: clamp(1rem, 8vw, calc(8 * (1600px / 100)));
+    }
+}
+@keyframes topslide{
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes bottomslide{
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

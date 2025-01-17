@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BackgroundImage from './building-plans.png';
+import Navbar from './components/Navbar';
+import Home from './pages/Home/Home';
+import Resume from './pages/Resume/Resume';
+import CSSAWebsite from './pages/Projects/CSSAWebsite';
+import PLDatabase from './pages/Projects/PLDatabase';
 
-function App() {
+const App: React.FC = () => {
+
+  const links = [
+    { name: 'Experience', url: '/experience' },
+    { name: 'Portfolio', url: '/portfolio' },
+    { name: 'Papers', url: '/papers' },
+    { name: 'Music', url: '/music' },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className='bard'></div>
+        {/* <Navbar title="My Navbar" links={links} /> */}
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/experience" Component={Resume} />
+          <Route path='/cssawebsite' Component={CSSAWebsite} />
+          <Route path='/pldatabase' Component={PLDatabase} />
+        </Routes>
+        {/* <img src={BackgroundImage} /> */}
+      </div>
+    </Router>
   );
 }
 
