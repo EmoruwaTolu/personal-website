@@ -28,3 +28,12 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+@media (orientation: portrait) {
+  #root{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border: none;
+  }
+}

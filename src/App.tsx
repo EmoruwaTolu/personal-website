@@ -19,6 +19,10 @@ const App: React.FC = () => {
           <Route path='/pldatabase' Component={PLDatabase} />
         </Routes>
         {/* <img src={BackgroundImage} /> */}
+        <div className='redirect-blurb'>
+          <p>Thanks for visiting my personal site. For the best user experience, please open the URL on a laptop or desktop.</p>
+          <p>Have a great day! :)</p>
+        </div>
       </div>
     </Router>
   );
