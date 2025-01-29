@@ -1,0 +1,42 @@
+.dropdown{
+    font-family: 'Finlandica';
+}
+.dropdown-button{
+    width: 100%;
+    padding: 1.5vw;
+    background-color: #344c34;
+    box-sizing: border-box;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    font-family: 'Finlandica';
+}
+.dropdown-button:hover{
+    cursor: pointer;
+}
+.dropdown-menu{
+    height: fit-content;
+    width: 100%;
+    background-color: #344c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-height: 15vh;
+    overflow: scroll;
+    scrollbar-width: 0px;
+    font-size: clamp(0.85rem, 0.75vw, calc(0.75 * (1600px / 100)));;
+}
+.dropdown-menu > a{
+    padding: 1.5vw;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+.dropdown-menu > a:hover{
+    background-color: #476747;
+}

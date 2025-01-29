@@ -1,0 +1,91 @@
+.article-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5em;
+    max-height: 100vh;
+    overflow: scroll;
+    position: relative;
+    display: flex;
+    font-family: 'Finlandica';
+    box-sizing: border-box;
+}
+.best-offences-container{
+    width: 100%;
+    height: 100%;
+}
+.best-offences-container > div{
+    border-bottom: 1px dashed #334c34;
+} 
+.title-img-container{
+    width: 50%;
+    font-family: 'Arsenal SC';
+    height: 100%;
+}
+.title-img-container > img{
+    width: 100%;
+    border: 1px solid #344c34;
+    box-shadow: 3px 3px #344c34;
+}
+.article-title{
+    font-size: clamp(1rem, 2.3vw, calc(2.3 * (1600px / 100)));
+    display: flex;
+    justify-content: left;
+    font-weight: 700;
+    width: 100%;
+    margin: 1vw 0;
+    box-sizing: border-box;
+}
+.article-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Finlandica';
+    border-top: 1px dashed #344c34;
+    border-bottom: 1px dashed #344c34;
+    margin: 1vw 0;
+    padding: 1vw 0;
+    box-sizing: border-box;
+}
+.factoid{
+    box-sizing: border-box;
+    padding: 1vw;
+    color: white;
+    box-shadow: 3px 3px black;
+    display: flex;
+    text-align: left;
+    background-color: #334c34;
+    width: 100%;
+    height: fit-content;
+}
+.article-part1-offences{
+    text-align: left;
+}
+.article-part1-offences > p{
+    line-height: 1.75em;
+}
+.text-container-1{
+    border-top: 1px dashed #334c34;
+    border-bottom: 1px dashed #334c34;
+    margin: 1.5vw 0; 
+    padding: 0.25vw 0;
+    box-sizing: border-box;
+    height: fit-content;
+}
+.article-part2-offences-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.article-part2-offences-left > p{
+    text-align: left;
+    line-height: 1.75em;
+}
+.article-part2-offences-right{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 2vw;
+}
+.article-part2-offences-right > p{
+    text-align: left;
+    line-height: 1.75em;
+}

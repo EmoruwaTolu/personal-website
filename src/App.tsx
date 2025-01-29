@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Resume from './pages/Resume/Resume';
 import CSSAWebsite from './pages/Projects/CSSAWebsite';
 import PLDatabase from './pages/Projects/PLDatabase';
+import BestOffences from './pages/Writings/Offences';
 
 const App: React.FC = () => {
 
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/experience" Component={Resume} />
           <Route path='/cssawebsite' Component={CSSAWebsite} />
           <Route path='/pldatabase' Component={PLDatabase} />
+          <Route path='/best-offences' Component={BestOffences} />
         </Routes>
         {/* <img src={BackgroundImage} /> */}
         <div className='redirect-blurb'>

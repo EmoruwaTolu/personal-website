@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CSSALandingPage from "../../../media/images/CSSA-landing-page.png";
+import { Link } from 'react-router-dom';
 
 interface WritingSectionProps {
     isFadingOut: boolean;
@@ -22,6 +23,7 @@ const WritingSection: React.FC<WritingSectionProps> = ({isFadingOut}) => {
                 {projects.map((project, index) => (
                     <div key={index} className={`writings-container ${isFadingOut ? 'fade-out' : ''}`}>
                         <div>Coming soon :3</div>
+                        <Link to={"/best-offences"}>Hello</Link>
                     </div>
                 ))}
         </div>
