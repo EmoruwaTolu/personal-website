@@ -19,11 +19,10 @@ const projects = [
 const WritingSection: React.FC<WritingSectionProps> = ({isFadingOut}) => {
 
     return(
-            <div className='tab-info-1'>
+            <div className='tab-info-1' style={{textAlign:"left", height:"100%"}}>
                 {projects.map((project, index) => (
-                    <div key={index} className={`writings-container ${isFadingOut ? 'fade-out' : ''}`}>
-                        <div>Coming soon :3</div>
-                        <Link to={"/best-offences"}>Hello</Link>
+                    <div key={index} className={`writings-container ${isFadingOut ? 'fade-out' : ''}`} style={{boxSizing: "border-box", padding: "1.5vw 0 ", margin: "1vw 0", borderBottom: "1px dashed #334c34",  borderTop: "1px dashed #334c34", fontSize: "0.85em"}}>
+                        <Link to={"/best-offences"} style={{textDecoration: "none",  color: "black"}}>Are We Witnessing the Greatest Offences Ever?</Link>
                     </div>
                 ))}
         </div>
