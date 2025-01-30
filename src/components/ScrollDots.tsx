@@ -5,49 +5,60 @@ interface ScrollDotsProps {
     sectionIDs: string[];
 }
 
-const ScrollDots: React.FC<ScrollDotsProps> = ({sectionIDs}) => {
+const ScrollDots: React.FC<ScrollDotsProps> = ({ sectionIDs }) => {
     const [activeSection, setActiveSection] = useState(0);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-
-            const sectionOffsets = sectionIDs.map((id) => {
-                const element = document.getElementById(id);
-                return element ? element.offsetTop : 0;
-            });
-
-            const activeIndex = sectionOffsets.findIndex(
-                (offset, index) => scrollPosition >= offset && (index === sectionIDs.length - 1 || scrollPosition < sectionOffsets[index + 1])
-            );
-
-            setActiveSection(activeIndex);
+        const observerOptions = {
+            root: null, 
+            rootMargin: "0px",
+            threshold: 0.5, // Trigger when 50% of a section is visible
         };
 
-        window.addEventListener("scroll", handleScroll);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const index = sectionIDs.indexOf(entry.target.id);
+                    if (index !== -1) {
+                        setActiveSection(index);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sectionIDs.forEach((id) => {
+            const section = document.getElementById(id);
+            if (section) {
+                observer.observe(section);
+            }
+        });
+
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            sectionIDs.forEach((id) => {
+                const section = document.getElementById(id);
+                if (section) {
+                    observer.unobserve(section);
+                }
+            });
         };
     }, [sectionIDs]);
 
-    const scrollToSection = (id : string, index: number) => {
+    const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
-        console.log(index)
-        if(section){
-            section.scrollIntoView({ behavior: "smooth" });
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "center" });
         }
-        setActiveSection(index);
     };
 
     return (
         <div className="scroll-dots">
-        {sectionIDs.map((id, index) => (
-            <div
-                key={id}
-                className={`dot ${index === activeSection ? "active" : ""}`}
-                onClick={() => scrollToSection(id, index)}
-            ></div>
-        ))}
+            {sectionIDs.map((id, index) => (
+                <div
+                    key={id}
+                    className={`dot ${index === activeSection ? "active" : ""}`}
+                    onClick={() => scrollToSection(id)}
+                ></div>
+            ))}
         </div>
     );
 };

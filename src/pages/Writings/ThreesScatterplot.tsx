@@ -7,7 +7,7 @@ interface ThreesScatterplotProps {
 
 const ThreesScatterplot: React.FC<ThreesScatterplotProps> = () => {
 
-    const threePointAttempts = [49.1, 42.5, 42.6, 37.1, 36.4, 34.5, 34.5, 30.4, 33.4, 26.1, 24.6].reverse();
+    const threePointAttempts = [37.5, 35.1, 34.2, 35.2, 34.6, 34.1, 32.0, 29.0, 27.0, 24.1, 22.4].reverse();
     const seasons = [
         "2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20",
         "2018-19", "2017-18", "2016-17", "2015-16", "2014-15"
@@ -50,7 +50,7 @@ const ThreesScatterplot: React.FC<ThreesScatterplotProps> = () => {
 
             const yScale = d3
                 .scaleLinear()
-                .domain([0, d3.max(validData, d => d.y) || 0])
+                .domain([0, 42])
                 .range([height + margin.top, margin.top]);
 
             // Add axes
@@ -107,7 +107,7 @@ const ThreesScatterplot: React.FC<ThreesScatterplotProps> = () => {
                 .attr('y', margin.top)
                 .attr('text-anchor', 'middle')
                 .attr('font-size', '16px')
-                .text('Three-Point Attempts by Season');
+                .text('Average NBA Three-Point Attempts by Season');
         };
 
         // Initial render

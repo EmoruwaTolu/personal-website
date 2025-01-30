@@ -69,9 +69,9 @@ const BestOffences: React.FC<OffencesProps> = () => {
                         <div className='first-graph-offences' style={{width: "100%", height: `40vh`}}>
                             <ThreesScatterplot />
                         </div>
-                        <div className='graph-dropdown'>
+                        {/* <div className='graph-dropdown'>
                             <Dropdown title='Select an NBA team' teams={lineTeams} onSelect={setTeam}/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div id='section2' style={{width: "100%", height: "100vh", display: "flex", boxSizing: "border-box", padding: "2vw 0", justifyContent: "space-between"}}>
