@@ -127,12 +127,14 @@ const PLDatabase: React.FC<PLDatabaseProps> = () => {
                                     <p>Once the server responds with the appropriate data the visualization of the information is done using various components on the frontend.</p>
                                 </div>
                             </div>
-                            <img
-                                src={images[currentIndex]}
-                                alt={`Slide ${currentIndex}`}
-                                className="carousel-image"
-                                style={{boxSizing: `border-box`, border: `3px solid #344c34`}}
-                            />
+                            <div style={{boxSizing:"border-box"}}>
+                                <img
+                                    src={images[currentIndex]}
+                                    alt={`Slide ${currentIndex}`}
+                                    className="carousel-image"
+                                    style={{boxSizing: `border-box`}}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

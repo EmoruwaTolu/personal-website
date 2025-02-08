@@ -109,12 +109,14 @@ const CSSAWebsite: React.FC<CSSAWebsiteProps> = () => {
                                     <p>On the right are screenshots from parts of the site.</p>
                                 </div>
                             </div>
-                            <img
-                                src={images[currentIndex]}
-                                alt={`Slide ${currentIndex}`}
-                                className="carousel-image"
-                                style={{boxSizing: `border-box`, border: `3px solid #344c34`}}
-                            />
+                            <div style={{boxSizing:"border-box"}}>
+                                <img
+                                    src={images[currentIndex]}
+                                    alt={`Slide ${currentIndex}`}
+                                    className="carousel-image"
+                                    style={{boxSizing: `border-box`}}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

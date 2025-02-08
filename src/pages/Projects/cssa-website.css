@@ -99,6 +99,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 .carousel-buttons{
@@ -107,15 +108,12 @@
     justify-content: end;
 }
 .carousel-image-container {
+    height: 100%;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-between;
-}
-.carousel-image {
-    width: 75%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
+    align-items: center;
 }
 .image-blurb{
     width: 22.5%;
