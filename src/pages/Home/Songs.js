@@ -48,16 +48,64 @@ let songs = [
         "link":"https://music.apple.com/ca/album/do-me-a-favour/1739545938?i=1739545950"
     },
     {
-        "song-name":"Top Bins",
-        "artist": "KiLLOWEN, Tommy Villiers",
-        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cf/00/c1/cf00c183-6d21-9a8f-8966-f005beda50bf/24SYMIM12314.rgb.jpg/632x632bb.webp",
-        "link":"https://music.apple.com/ca/album/top-bins/1747836106?i=1747836474"
-    },
-    {
         "song-name":"Samurai",
         "artist": "Lupe Fiasco",
         "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c4/f4/bc/c4f4bce2-9c54-fc8b-47a6-3f450c457a65/198391855535.jpg/632x632bb.webp",
         "link":"https://music.apple.com/ca/album/samurai/1742012449?i=1742012460"
+    },
+    {
+        "song-name":"Landline",
+        "artist": "binki",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/01/0c/fd/010cfdc2-9afc-6713-53e6-22aa7751dca8/08292992208935_Cover.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/ca/song/landline/1822419045"
+    },
+    {
+        "song-name":"Vento in faccia",
+        "artist": "Gioia Lucia",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/08/f3/3c08f3e7-3696-2fb0-15bf-d7975e05ce9e/8057715108073.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/ca/song/vento-in-faccia/1857811256"
+    },
+    {
+        "song-name":"Vento in faccia",
+        "artist": "Gioia Lucia",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2c/e0/f1/2ce0f19f-a14c-a450-9194-e971fb5fbfa2/196292586091_cover.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/us/song/summers-over/1716760714"
+    },
+    {
+        "song-name":"Any Distance",
+        "artist": "Zémaria",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music/65/83/a2/mzi.pyfiiuuf.jpg/600x600bb.webp",
+        "link":"https://music.apple.com/us/song/any-distance/388206053"
+    },
+    {
+        "song-name":"Copricolori",
+        "artist": "Marco Castello",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ef/79/d0/ef79d0ba-1ed0-8c82-a2d2-79caf0a70fbb/5056370960685.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/us/song/copricolori/1712460080"
+    },
+    {
+        "song-name":"Moi c'est",
+        "artist": "Camélia Jordana",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/3c/61/673c6174-3561-3eae-07ec-c43def7b9e51/mzi.wrgqvsdh.jpg/600x600bb.webp",
+        "link":"https://music.apple.com/us/song/moi-cest/362453674"
+    },
+    {
+        "song-name":"Been a Minute",
+        "artist": "Leyma",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/81/90/03/81900362-1445-0a48-df9c-82912fac3988/5054526807402_1.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/us/song/been-a-minute/1520021863"
+    },
+    {
+        "song-name":"Love Songs",
+        "artist": "Lola Coca",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3c/d1/1e/3cd11efe-d663-5c1b-0bc0-e539c7b85cc7/mzm.fjuflfsq.jpg/632x632bb.webp",
+        "link":"https://music.apple.com/us/song/love-songs/1056895366"
+    },
+    {
+        "song-name":"'06 wayne rooney",
+        "artist": "Jim Legxacy",
+        "cover-art":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/22/e0/7222e0e6-a1fc-b1e1-1a6c-e9c2a773157e/191404157473.png/632x632bb.webp",
+        "link":"https://music.apple.com/us/song/06-wayne-rooney/1822840215"
     }
 ]
 

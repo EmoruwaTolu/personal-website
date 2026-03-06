@@ -13,26 +13,13 @@ const experiences = [
         company: "Amazon Web Services",
         role: "Software Engineer Intern",
         image: AmazonLogo,
-        time: "May 2023 - August 2023",
-        tech: ["AWS", "Figma", "ReactJS", "Typescript", "CypressTests", "Mapbox", "D3", "Deck.GL", "GeoJSON"],
-        location: "Vancouver, BC",
+        time: "May 2025- August 2025",
+        tech: ["AWS", "DynamoDB", "AWS RDS", "Java"],
+        location: "Toronto, ON",
         points: [
-            "Designed and built a platform on which users are able to visualize, edit, and draw geofences using Mapbox, DeckGL, and D3.",
-            "Managed and validated user geofences on the AWS Console.",
-            "Wrote unit tests for backend functions and used Cypress to test UI components behaviour."
-        ]
-    },
-    {
-        company: "Trend Micro",
-        role: "Cloud Engineer Intern",
-        image: TrendMicroLogo,
-        time: "January 2024 - April 2024",
-        tech: ["AWS", "GCP", "Azure", "Go", "Serverless Framework", "Cybersecurity"],
-        location: "Ottawa, ON",
-        points: [
-            "Wrote code to validate user credentials and rotate them after a period of time to ensure account security.",
-            "Redesigned database schema to help backend functions become more optimized.",
-            "Added functionality to metric loggers to gather more insightful information about user behaviour."
+            "Leveraged AWS tools like DynamoDB, Lambda, and SNS to improve the speed at which teams deployed agents for AWS Relational Databases",
+            "Designed and built new workflows that improved the management of database resources.",
+            "Optimized existing workflows to improve database efficiency and reduce cost."
         ]
     },
     {
@@ -45,9 +32,36 @@ const experiences = [
         points: [
             "Designed and built a platform using React that allowed users to view the historical data of the water flow and water level, at different points along the river.",
             "Built a system where water levels on the river could be predicted based on changes the user made at different points.",
-            "Added functionality to metric loggers to gather more insightful information about user behaviour."
+            "Built metric loggers to gain more insight into user behaviour while they used the platform."
         ]
     },
+    {
+        company: "Trend Micro",
+        role: "Cloud Engineer Intern",
+        image: TrendMicroLogo,
+        time: "January 2024 - April 2024",
+        tech: ["AWS", "GCP", "Azure", "Go", "Serverless Framework", "Cybersecurity"],
+        location: "Ottawa, ON",
+        points: [
+            "Wrote code to validate user credentials and rotate them after a period of time to ensure account security.",
+            "Created a serverless framework and built cronjobs that worked to improve customer account security.",
+            "Designed and built AWS Schedules, Lambdas to help more efficiently protect user privacy."
+        ]
+    },
+    {
+        company: "Amazon Web Services",
+        role: "Software Engineer Intern",
+        image: AmazonLogo,
+        time: "May 2023 - August 2023",
+        tech: ["AWS", "Figma", "ReactJS", "Typescript", "CypressTests", "Mapbox", "D3", "Deck.GL", "GeoJSON"],
+        location: "Vancouver, BC",
+        points: [
+            "• Designed mockups for the UI of a new B2B service that was launched using Figma and Adobe Creative Cloud apps.",
+            "Designed and built a platform on which users are able to visualize, edit, and draw geofences using Mapbox, DeckGL, and D3.",
+            "Managed and validated user geofences on the AWS Console.",
+            "Wrote unit tests for backend functions and used Cypress to test UI components behaviour."
+        ]
+    }
 ];
 
 const ExperienceSection: React.FC<ExperienceSectionProps> = ({ isFadingOut }) => {
@@ -92,47 +106,3 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ isFadingOut }) =>
 };
 
 export default ExperienceSection;
-
-
-                    {/* <div>
-                        <div style={{width: `100%`, height: `12vw`, display: `flex`, boxSizing: `border-box`, alignItems: `center`}}>
-                            <div className='company-image-container' style={{width: `20%`}}>
-                                <div className='image-box' style={{backgroundColor: "#232F3F", height: `7vw`, width: `7vw`,borderRadius: `50%`, overflow: `hidden`, display: `flex`, 
-                                    alignItems: `center`, justifyContent: `center`}}>
-                                    <img className='company-image' src={AmazonLogo} style={{height: `100%`, width: `100%`, objectFit: `scale-down`}}/>
-                                </div>
-                            </div>
-                            <div className='company-job-info' style={{width: `75%`, flexDirection: `column`, display: `flex`, justifyContent: `start`, height: `fit-content`}}>
-                                <p className='job-title' style={{width:`fit-content`, margin: `0`}}>Software Engineer Intern</p>
-                                <p className='job-place' style={{width:`fit-content`, margin: `0`}}>Amazon Web Services</p>
-                                <p style={{width:`fit-content`, margin: `1em 0`}}>May 2023 - August 2023</p>
-                            </div>
-                            <div
-                                className="dropdown-button"
-                                style={{ width: "5%", cursor: "pointer" }}
-                                onClick={handleToggle} 
-                                >
-                                {isCollapsed ? "v" : "^"}
-                            </div>
-                        </div>
-                        {!isCollapsed && (
-                            <div
-                            className="job-done-stuff"
-                            style={{ boxSizing: "border-box", marginTop: "1em" }}
-                            >
-                            <ul className="things-done" style={{ padding: 0 }}>
-                                <li>
-                                Designed and built a platform on which users are able to
-                                visualize, edit, and draw geofences using Mapbox, DeckGL, and D3.
-                                </li>
-                                <li>
-                                Managed and validated user geofences on the AWS Console.
-                                </li>
-                                <li>
-                                Wrote unit tests for backend functions and used Cypress to test UI
-                                components behaviour.
-                                </li>
-                            </ul>
-                            </div>
-                        )}
-                    </div> */}
